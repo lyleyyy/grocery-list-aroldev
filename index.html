@@ -18,36 +18,12 @@
       <h3>Add New Item</h3>
       <div class="grocery-input">
         <label>Item Name</label>
-        <input type="text" name="name" placeholder="Your item name" required />
+        <input type="text" name="name" placeholder="Item name" required />
       </div>
 
       <div class="grocery-input">
         <label>Amount</label>
-        <input
-          type="number"
-          name="amount"
-          min="0"
-          step="any"
-          placeholder="Item amount"
-          required
-        />
-      </div>
-
-      <div class="grocery-input">
-        <label>Unit</label>
-        <input
-          list="units"
-          name="unit"
-          placeholder="Select or type unit"
-          required
-        />
-        <datalist id="units" class="units-list">
-          <option value="kg"></option>
-          <option value="g"></option>
-          <option value="cup"></option>
-          <option value="bottle"></option>
-          <option value="pack"></option>
-        </datalist>
+        <input type="text" name="amount" placeholder="Amount" required />
       </div>
 
       <button type="submit" class="form-button">Add</button>
@@ -57,9 +33,9 @@
       <h3>List</h3>
       <div class="list-items-container">
         <!-- <div class="list-item">
-          <input type="checkbox" />
-          <span class="item-name">Tinto de Verano</span>
-          <span class="item-unit">1 bottle</span>
+          <input type="checkbox" checked />
+          <span class="item-name checked-item">Tinto de Verano</span>
+          <span class="item-amount checked-item">1 bottle</span>
           <button class="delete-button">Delete</button>
         </div> -->
       </div>

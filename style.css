@@ -29,7 +29,7 @@ body {
 .grocery-input {
   display: flex;
   flex-direction: column;
-  width: 250px;
+  width: 65%;
 }
 
 .grocery-input label {
@@ -65,7 +65,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 70%;
+  width: 30%;
   gap: 10px;
   margin-top: 20px;
 }
@@ -97,10 +97,16 @@ body {
 
 .item-name {
   width: 50%;
+  margin-left: 10px;
 }
 
-.item-unit {
+.item-amount {
   width: 30%;
+}
+
+.checked-item {
+  text-decoration: line-through;
+  color: rgb(161 161 170);
 }
 
 .delete-button {
@@ -119,5 +125,20 @@ body {
 @media (max-width: 768px) {
   .add-grocery-form {
     width: 70%;
+  }
+
+  .grocery-list-container {
+    width: 70%;
+  }
+}
+
+/* responsive for tablet screen */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .add-grocery-form {
+    width: 50%;
+  }
+
+  .grocery-list-container {
+    width: 50%;
   }
 }
